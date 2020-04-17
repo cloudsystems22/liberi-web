@@ -6,7 +6,7 @@ function toggleSidebar(){
     document.getElementById('menu-left').classList.toggle('active');
     document.getElementById('ul-menu').classList.toggle('active');
     let menuRight = document.getElementById('menu-right').classList.toggle('active');
-    console.log(menuRight);
+    //console.log(menuRight);
     
     if(menuRight){
         document.getElementById('img-menu').src = 'images/fechar-white.png';

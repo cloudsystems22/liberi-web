@@ -4,11 +4,94 @@ html{
     font-family: Nunito;
 }
 
-nav{
+#nav{
     position: fixed;
     z-index: 100;
     width: 100%;
-    bottom: 200px;
+    bottom: 20%;
+    /* transform: translate(0, 0); */
+    transition: all 500ms linear;
+}
+
+#nav.active{
+    transform: translateY(-670px);
+    /* top: 50px; */
+}
+
+#div-logo{
+    position: fixed;
+    z-index: 99;
+    bottom: 250px;
+    right: 100px;
+    transition: all 500ms linear;
+}
+
+#div-logo.active{
+    transform: translateY(-640px);
+    /* top:-25px */
+}
+
+#span-logo-left {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 109px;
+    margin-right: 15px;
+
+    color: #011D37;
+    transition: all 500ms linear;
+}
+
+#span-logo-left.active{
+    font-size:30px;
+    margin-right: 5px;
+    color: #4F5152
+}
+
+
+#span-logo-left-dois {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 109px;
+    margin-right: 15px;
+
+    color: #011D37;
+    transition: all 500ms linear;
+}
+
+#span-logo-left.activedois{
+    font-size:30px;
+    margin-right: 5px;
+    color: #011D37
+}
+
+
+#span-logo-right {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 109px;
+    margin-left: 15px;
+
+    color: #018B94;
+    transition: all 500ms linear;
+}
+
+#span-logo-right.active{
+    font-size:30px;
+    margin-left: 5px;
+    color: #FFFFFF
+}
+
+
+#span-logo-right.activedois{
+    font-size:30px;
+    margin-left: 5px;
+    color: #018b94
 }
 
 nav a{
@@ -39,35 +122,6 @@ nav img{
 
 .flex-item-1 {
 	flex: 1;
-}
-
-#div-logo{
-    position: fixed;
-    z-index: 99;
-    bottom: 250px;
-    right: 100px;
-}
-
-#span-logo-left {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 109px;
-    margin-right: 15px;
-
-    color: #011D37;
-}
-
-#span-logo-right {
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 80px;
-    line-height: 109px;
-    margin-left: 15px;
-
-    color: #018B94;
 }
 
 #menu-left{
@@ -115,21 +169,228 @@ nav img{
     display: inline-block;
 }
 
+.pt-perspective {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
+}
 
-
-#home{
+#home {
     background-image: url('../images/background-image-home.png');
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+/* 
+#home.active{
+    height: 100vh;
+    position: absolute;
+	top: 0;
+	left: 0;
+    visibility: visible;
+	overflow: visible;
+	-webkit-backface-visibility: visible;
+	-moz-backface-visibility: visible;
+	backface-visibility: visible;
+	-webkit-transform: translate3d(-100, 0, 0);
+	-moz-transform: translate3d(-100, 0, 0);
+	transform: translate3d(-100, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: moveToBottom .6s ease both;
+	animation: moveToBottom .6s ease both;
+} */
+
+
+#sobre {
+    background-image: url('../images/background-image-sobre.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 100%;
+	left: 0;
+    transition: all 500ms linear;
+    transform: translateY(0);
+}
+
+#sobre.active{
+    top: 0;
+}
+
+.sobre-div-text{
+    margin-top: 200px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-text{
+    background-color: rgba(5, 5, 5, 0.9);
     height: 100vh;
 }
 
-#sobre{
-    display: none;
+.sobre-h1{
+    font-size: 67pt;
+    font-family: Nunito;
+}
+
+.sobre-h2{
+    font-size: 60pt;
+    font-family: Nunito;
+}
+
+.sobre-h2-55{
+    font-size: 55pt;
+    font-family: Nunito;
+}
+
+.sobre-p{
+    font-size: 18pt;
+    text-align: center;
+}
+
+.sobre-p-white{
+    color: white;
+    text-align: justify;
+    font-size: 15pt;
+}
+
+
+#modelo-negocios {
+    background-color:white;
+    width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 100%;
+	left: 0;
+    transition: all 500ms linear;
+    transform: translateY(0);
+}
+
+#modelo-negocios.active{
+    top: 0;
+}
+
+.modelo-negocios-div{
+    margin-top: 150px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modelo-negocios-h1{
+    font-size: 40pt;
+    font-family: Nunito;
+}
+
+.modelo-negocios-h2{
+    font-size: 80pt;
+    font-family: Nunito;
+}
+
+.modelo-negocios-h2-2{
+    font-size: 60pt;
+    font-family: Nunito;
+}
+
+.modelo-negocios-img{
+    position: fixed;
+    top: 100px;
+    right: 0;
 }
 
 @media (max-width: 1440px){
 
+    #nav.active{
+        transform: translateY(-530px);
+        /* top: 50px; */
+    }
+
+    
+    #div-logo.active{
+        transform: translateY(-450px);
+        /* top:-25px */
+    }
+
+    
+.sobre-div-text{
+    margin-top: 110px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre-text{
+    background-color: rgba(5, 5, 5, 0.9);
+    height: 100vh;
+}
+
+.sobre-h1{
+    font-size: 50pt;
+    font-family: Nunito;
+}
+
+.sobre-h2{
+    font-size: 47pt;
+    font-family: Nunito;
+}
+
+.sobre-h2-55{
+    font-size: 42pt;
+    font-family: Nunito;
+}
+
+.sobre-p{
+    font-size: 15pt;
+    text-align: center;
+}
+
+.sobre-p-white{
+    color: white;
+    text-align: justify;
+    font-size: 12pt;
+}
+
+
+.modelo-negocios-div{
+    margin-top: 110px;
+    width: 450px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.modelo-negocios-h1{
+    font-size: 30pt;
+    font-family: Nunito;
+}
+
+.modelo-negocios-h2{
+    font-size: 50pt;
+    font-family: Nunito;
+}
+
+.modelo-negocios-h2-2{
+    font-size: 50pt;
+    font-family: Nunito;
+}
+
+.modelo-negocios-img{
+    position: fixed;
+    width: 650px;
+    top: 100px;
+    right: 0;
+}
 }
 
 @media (max-width: 1400px){
