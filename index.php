@@ -81,10 +81,9 @@
                 <h1><span id='logo-left'>Liberi</span><span id='logo-right'>móvil</span></h1>
             </div>
             <div class='row'>
-                <div class='col-md-6'>
+                <div class='col-md-6 col-sm-12'>
                     <div class="modelo-negocios-div">
                         <h1 class="modelo-negocios-h1">Modelo de Oferta ao Cliente</h1>
-                        <br>
                         <div class="row model-negocio-div-row">
                             <div class="col-md-5">
                                 <h2 class="modelo-negocios-h2 font-color-secundary">3 Gb</h2>
@@ -111,7 +110,7 @@
                         </p>
                     </div>
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-6 col-sm-12'>
                     <img src="images/img-model-oferta.png" alt="" class="modelo-negocios-img">
                 </div>
             </div>
@@ -126,33 +125,32 @@
             <div class="container-parceiros">
                 <h1>Empresas parceiras</h1>
                 <div class="row">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <img src="images/empresa-interesse-um.png" alt="Jornais" class="parceiros-img">
                         <p class="parceiros-p font-color-secundary">Jornais</p>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <img src="images/empresa-interesse-dois.png" alt="Entregas" class="parceiros-img">
                         <p class="parceiros-p font-color-secundary">Apps de entrega</p>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <img src="images/empresa-interesse-tres.png" alt="Transporte" class="parceiros-img">
                         <p class="parceiros-p font-color-secundary">Transporte</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <img src="images/empresa-interesse-quatro.png" alt="Jornais" class="parceiros-img">
                         <p class="parceiros-p font-color-secundary">Bancos digitais</p>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <img src="images/empresa-interesse-cinco.png" alt="Entregas" class="parceiros-img">
                         <p class="parceiros-p font-color-secundary">Lojas digitais</p>
                     </div>
-                    <div class="col-md-4 col-sm-4">
+                    <div class="col-md-4 col-sm-6">
                         <img src="images/empresa-interesse-seis.png" alt="Transporte" class="parceiros-img">
                         <p class="parceiros-p font-color-secundary">Redes sociais</p>
                     </div>
                 </div>
+             
 
             </div>
         </div>
