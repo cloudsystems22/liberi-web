@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/pallet.css">
-    <link rel="stylesheet" type="text/css" href="css/animations.css">
-	<script src="scripts/modernizr.custom.js"></script>
 </head>
 <body>
     <div id='div-logo'>
         <h1><span id='span-logo-left'>Liberi</span><span id='span-logo-right'>móvil</span></h1>
     </div>
     <nav class='flex' id='nav'>
-        <div class='br-primary-transparent' id='menu-left'></div>
+        <div class='br-primary-transparent' id='menu-left'>
+            <div class="div-play">
+                <a href="#!" class=""><img src="images/botao-play.png" alt="" class="img-play"></a>
+            </div>
+        </div>
         <div class='bg-secundary-transparent' id='menu-right'>
             <div class='flex'>
                 <div class='item'>
@@ -42,6 +44,9 @@
 
     </div>
     <div id='sobre' class="">
+        <div class="logo">
+            <h1><span id='logo-left-gray'>Liberi</span><span id='logo-right-gray'>móvil</span></h1>
+        </div>
         <div class='container-fluid'>
             <div class="row">
                 <div class="col-md-4"></div>
@@ -72,6 +77,9 @@
     
     <div id="modelo-negocios">
         <div class='container-fluid'>
+            <div class="logo">
+                <h1><span id='logo-left'>Liberi</span><span id='logo-right'>móvil</span></h1>
+            </div>
             <div class='row'>
                 <div class='col-md-6'>
                     <div class="modelo-negocios-div">
@@ -82,7 +90,7 @@
                                 <h2 class="modelo-negocios-h2 font-color-secundary">3 Gb</h2>
                             </div>
                             <div class="col-md-2">
-                                <img src="images/plus-imag.png" alt="plus">
+                                <img src="images/plus-imag.png" alt="plus" class="img-plus">
                             </div>
                             <div class="col-md-5">
                                 <h2 class="modelo-negocios-h2-2 font-color-secundary">LIGAÇÕES</h2>
@@ -109,43 +117,48 @@
             </div>
         </div>
     </div>
+    <div id='parceiros'>
 
-
-
-    <!-- <section id="home">
-
-    </section>
-    
-    <section id="modelo-negocios">
-        
-    </section> -->
-    <!-- <section id="parceiros">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 div-imag">
-                    <img src="images/empresa-interesse-um.png" alt='' />
-                </div>
-                <div class="col-md-4 div-imag">
-                    <img src="images/empresa-interesse-dois.png" alt='' />
-                </div>
-                <div class="col-md-4 div-imag">
-                    <img src="images/empresa-interesse-tres.png" alt='' />
-                </div>
+            <div class="logo">
+                <h1><span id='logo-left'>Liberi</span><span id='logo-right'>móvil</span></h1>
             </div>
-            <div class="row">
-                <div class="col-md-4 div-imag">
-                    <img src="images/empresa-interesse-quatro.png" alt='' />
+            <div class="container-parceiros">
+                <h1>Empresas parceiras</h1>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <img src="images/empresa-interesse-um.png" alt="Jornais" class="parceiros-img">
+                        <p class="parceiros-p font-color-secundary">Jornais</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <img src="images/empresa-interesse-dois.png" alt="Entregas" class="parceiros-img">
+                        <p class="parceiros-p font-color-secundary">Apps de entrega</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <img src="images/empresa-interesse-tres.png" alt="Transporte" class="parceiros-img">
+                        <p class="parceiros-p font-color-secundary">Transporte</p>
+                    </div>
                 </div>
-                <div class="col-md-4 div-imag">
-                    <img src="images/empresa-interesse-cinco.png" alt='' />
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <img src="images/empresa-interesse-quatro.png" alt="Jornais" class="parceiros-img">
+                        <p class="parceiros-p font-color-secundary">Bancos digitais</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <img src="images/empresa-interesse-cinco.png" alt="Entregas" class="parceiros-img">
+                        <p class="parceiros-p font-color-secundary">Lojas digitais</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <img src="images/empresa-interesse-seis.png" alt="Transporte" class="parceiros-img">
+                        <p class="parceiros-p font-color-secundary">Redes sociais</p>
+                    </div>
                 </div>
-                <div class="col-md-4 div-imag">
-                    <img src="images/empresa-interesse-seis.png" alt='' />
-                </div>
+
             </div>
         </div>
 
-    </section> -->
+    </div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -153,8 +166,5 @@
 <script src="scripts/my-menu.js"></script>
 <script src='scripts/navegacao.js'></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="scripts/jquery.dlmenu.js"></script>
-<script src="scripts/pagetransitions.js"></script>
 </body>
 </html>

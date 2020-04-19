@@ -11,7 +11,7 @@ $(document).ready(function (){
 function click_nav(e) {
 
     if(e == 'home'){
-        anima_menu();
+        anima_menu(e);
     }
     //desativa o active da pagina atual;
     document.getElementById(pageActive).classList.toggle('active');
@@ -19,7 +19,7 @@ function click_nav(e) {
     document.getElementById(e).classList.toggle('active');
     //se o menu estiver na posição da home, ativa o efeito para subir;
     if(pageActive == 'home'){
-        anima_menu();
+        anima_menu(e);
     } 
     //captura o valor da pagina ativa;
     pageActive = e;
@@ -28,19 +28,10 @@ function click_nav(e) {
 
 
 function anima_menu(e){
+    //alert(e);
     document.getElementById('nav').classList.toggle('active');
     document.getElementById('div-logo').classList.toggle('active');
     document.getElementById('span-logo-left').classList.toggle('active');
     document.getElementById('span-logo-right').classList.toggle('active');
-    // if(e == 'home'){
-    //     document.getElementById('span-logo-left').classList.toggle('active');
-    //     document.getElementById('span-logo-right').classList.toggle('active');
-    // } else if(e == 'sobre') {
-    //     document.getElementById('span-logo-left').classList.toggle('active');
-    //     document.getElementById('span-logo-right').classList.toggle('active');
-    // } else if(e == 'modelo-negocios'){
-    //     document.getElementById('span-logo-left').classList.toggle('activedois');
-    //     document.getElementById('span-logo-right').classList.toggle('activedois');
-    // }
     
 }
