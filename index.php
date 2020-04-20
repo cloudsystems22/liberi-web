@@ -16,7 +16,7 @@
     <nav class='flex' id='nav'>
         <div class='br-primary-transparent' id='menu-left'>
             <div class="div-play">
-                <a href="#!" class=""><img src="images/botao-play.png" alt="" class="img-play"></a>
+                <a href="#!" class="" onclick="institucional()"><img src="images/botao-play.png" alt="" class="img-play"></a>
             </div>
         </div>
         <div class='bg-secundary-transparent' id='menu-right'>
@@ -28,10 +28,11 @@
                     <ul id='ul-menu'>
                         <li><a href="#!" onclick="click_nav('home')">Home</a></li>
                         <li><a href="#!" onclick="click_nav('sobre')">Sobre</a></li>
-                        <li><a href="#!" onclick="click_nav('modelo-negocios')">Contato</a></li>
-                        <li><a href="#!">Suporte</a></li>
-                        <li><a href="#!">Faça seu cadastro</a></li>
+                        <li><a href="#!" onclick="click_nav('modelo-negocios')">Plano</a></li>
+                        <li><a href="#!" onclick="click_nav('suporte')">Suporte</a></li>
+                        <li><a href="#!" onclick="click_nav('cadastro')">Faça seu cadastro</a></li>
                         <li><a href="#!" onclick="click_nav('parceiros')">Parceiros</a></li>
+                        <li><a href="#!" onclick="click_nav('contato')">Contato</a></li>
                     </ul>
                 </div>
 
@@ -65,8 +66,8 @@
                             O compartilhamento destes clientes entre empresas parceiras fará com que uma grande vade de dados seja dividida, gerando benefícios exclusivos para todos.
                         </p>
                         <p class='sobre-p-white'>
-                            O investimento por paste das empresas vitria da verba de marketinf disponível para ações de grande impacto que, 
-                            como está, atrairam novos números através de um servíço único e que acompanha o público onde for.
+                            O investimento por parte das empresas viria da verba de marketing disponível para ações de grande impacto que, 
+                            como esta, atrairam novos números através de um servíço único e que acompanha o público onde for.
                         </p>
 
                     </div>
@@ -116,6 +117,107 @@
             </div>
         </div>
     </div>
+    <div id='suporte'>
+        <div class="suporte-logo">
+            <h1><span id='logo-left'>Liberi</span><span id='logo-right'>móvil</span></h1>
+        </div>
+        <div>
+            <img src="images/suporte-tecnico.png" alt="" class='img-suporte'>
+            <h1 class='suporte-h1-2'>Suporte técnico</h1>
+            <h1 class='suporte-h1'>+55(11)94764-4384</h1>
+        </div>
+    </div>
+    <div id='cadastro'>
+        <div class='container-fluid'>
+            <div class="cadastro-logo">
+                <h1><span id='logo-left'>Liberi</span><span id='logo-right'>móvil</span></h1>
+            </div>
+            <div class='row'>
+                <div class='col-md-3 col-sm-12'>
+                    <h1>Cadastro</h1>
+                </div>
+                <div class='col-md-9 col-sm-12'>
+                    <div class='div-cadastro'>
+                        <div class='div-form'>
+                            <form action="cadastro.php" method='POST'>
+                                <div class='row'>
+                                    <div class='col-md-12'>
+                                        <div class='form-group'>
+                                            <label for="nome">Nome:</label>
+                                            <input type="text" class='form-control' id='nome' name='name' placeholder='Nome...' required>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="rg">RG:</label>
+                                            <input type="text" class='form-control' id='rg' name='rg' placeholder='RG...' required>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="cpf">CPF:</label>
+                                            <input type="text" class='form-control' id='cpf' name='cpf' placeholder='CPF...' required>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="cep">CEP:</label>
+                                            <input type="text" class='form-control' id='cep' name='cep' placeholder='00.000-000' required>
+                                        </div>
+
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="endereco">Endereço:</label>
+                                            <input type="text" class='form-control' id='endereco' name='endereco' placeholder='Endereço...' require>
+                                        </div>
+
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="bairro">Bairro:</label>
+                                            <input type="text" class='form-control' id='bairro' name='bairro' placeholder='Bairro...' required>
+                                        </div>
+
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="cidade">Cidade:</label>
+                                            <input type="text" class='form-control' id='cidade' name='cidade' placeholder='Cidade...' required>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="estado">Estado:</label>
+                                            <input type="text" class='form-control' id='estado' name='estado' placeholder='Estado...' required>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="nome">Telefone:</label>
+                                            <input type="tel" class='form-control' id='telefone' name='telefone' placeholder='(99)9999-9999' required>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="nome">E-mail:</label>
+                                            <input type="email" class='form-control' id='email' name='email' placeholder='email@dominio.com'>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-12'>
+                                        <button type='submit' class='btn-enviar-cadastro bg-secundary'>Enviar</button>
+                                    </div>
+                                </div>
+
+                                    
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id='parceiros'>
 
         <div class="container-fluid">
@@ -156,13 +258,64 @@
         </div>
 
     </div>
+    <div id='contato'>
+        <div class='fundo-contato'>
+            <div class="contato-logo">
+                <h1><span id='logo-left-gray'>Liberi</span><span id='logo-right-gray'>móvil</span></h1>
+            </div>
+            <h1 class='font-color-secundary'>Contato</h1>
+            <h2 class='font-color-secundary'>contato@liberimovil.com.br</h2>
+        </div>
+        <div id='email-form'>
+            <form action="contato.php" method='POST'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class='form-group'>
+                            <label for="">Nome</label>
+                            <input type="text" class='form-control' name='name' placeholder='Nome...' required>
+                        </div>
+                    </div>
+                    <div class='col-md-12'>
+                        <div class='form-group'>
+                            <label for="">Email</label>
+                            <input type="email" class='form-control' name='email' placeholder='email@dominio.com' required>
+                        </div>
+                    </div>
+                    <div class='col-md-12'>
+                        <div class='form-group'>
+                            <label for="">Assunto</label>
+                            <input type="text" class='form-control' name='subject' placeholder='Gostaria de...' required>
+                        </div>
+                    </div>
+                    <div class='col-md-12'>
+                        <div class='form-group'>
+                            <label for="">Mensagem</label>
+                            <textarea name="mensagem" id="" required></textarea>
+                        </div>
+                    </div>
+                    <div class='col-md-12'>
+                        <div class='form-group'>
+                            <button type='submit' class='btn-enviar-cadastro bg-secundary'>Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
+    <div id='video-institucional'>
+        <div>
+            <a href="#!" onclick="institucional()"><img src="images/fechar-white.png" alt="" style='width:20px; margin-left:5px; margin-top:5px'></a>
+        </div>
+        <iframe src="videos/video-um.mp4" frameborder="0"></iframe>
+
+    </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="scripts/my-menu.js"></script>
-<script src='scripts/navegacao.js'></script>
+<script src='scripts/my-navigation.js'></script>
 
 </body>
 </html>

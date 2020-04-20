@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;1,400;1,600&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#sucesso{
+    background-image: url('../images/background-sucesso.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.cadastro-logo{
+    position: fixed;
+    top: 371px;
+    left: 298px;
+}
+
+
+#logo-left{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 5px;
+    color: #011D37
+}
+
+#logo-right{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
+    color: #018b94
+}
+
+.div-sucesso{
+    position: fixed;
+    top:491px;
+    left: 599px
+}
+
+.div-sucesso h1, h2{
+    color: white;
+    font-family: Nunito;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.div-dados{
+    position: fixed;
+    top: 450px;
+    left: 300px;
+}
+
+.div-dados p{
+    text-align: center;
+}
+
+.nome{
+    font-size: 17pt;
+    font-family: Nunito;
+    font-weight: bold;
+    color: #011D37;
+}
+
+.email{
+    font-size:16pt;
+    font-family: Nunito;
+    font-weight: bold;
+    color: #018b94;
+}
+

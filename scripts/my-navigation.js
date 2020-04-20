@@ -27,10 +27,8 @@ function click_nav(e) {
 }
 
 function institucional(){
-    alert('!');
     document.getElementById('video-institucional').classList.toggle('active');
 }
-
 
 function anima_menu(e){
     //alert(e);
