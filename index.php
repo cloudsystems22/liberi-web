@@ -58,7 +58,7 @@
                         <h2 class='sobre-h2'><span style='color:white'>um </span><span style='color:#018B94'>novo conceito</span></h2>
                         <h2 class='sobre-h2-55'><span style='color:white'>em telefonia </span><span style='color:#018B94'>mundial</span></h2>
                         <p class='sobre-p font-color-secundary'>A Liberi Móvil, nasce com o propósito de revolucionar o mercado da telefonia mundial</p>
-                        <p class='sobre-p-white'>
+                        <!-- <p class='sobre-p-white'>
                             Com o conceito onde grandes empresas com atuação online de serviços e/ou produtos, sejam as grandes financiadoras deste projeto.
                         </p>
                         <p class='sobre-p-white'>
@@ -68,7 +68,7 @@
                         <p class='sobre-p-white'>
                             O investimento por parte das empresas viria da verba de marketing disponível para ações de grande impacto que, 
                             como esta, atrairam novos números através de um servíço único e que acompanha o público onde for.
-                        </p>
+                        </p> -->
 
                     </div>
                 </div>
@@ -84,7 +84,7 @@
             <div class='row'>
                 <div class='col-md-6 col-sm-12'>
                     <div class="modelo-negocios-div">
-                        <h1 class="modelo-negocios-h1">Modelo de Oferta ao Cliente</h1>
+                        <h1 class="modelo-negocios-h1">Na Liberi você tem</h1>
                         <div class="row model-negocio-div-row">
                             <div class="col-md-5">
                                 <h2 class="modelo-negocios-h2 font-color-secundary">3 Gb</h2>
@@ -139,7 +139,7 @@
                 <div class='col-md-9 col-sm-12'>
                     <div class='div-cadastro'>
                         <div class='div-form'>
-                            <form action="cadastro.php" method='POST'>
+                            <form action="cadastro.php" method='POST' enctype='multipart/form-data'>
                                 <div class='row'>
                                     <div class='col-md-12'>
                                         <div class='form-group'>
@@ -147,16 +147,25 @@
                                             <input type="text" class='form-control' id='nome' name='name' placeholder='Nome...' required>
                                         </div>
                                     </div>
-                                    <div class='col-md-6'>
+                                    <div class='col-md-4'>
                                         <div class='form-group'>
                                             <label for="rg">RG:</label>
                                             <input type="text" class='form-control' id='rg' name='rg' placeholder='RG...' required>
                                         </div>
                                     </div>
-                                    <div class='col-md-6'>
+                                    <div class='col-md-4'>
                                         <div class='form-group'>
                                             <label for="cpf">CPF:</label>
                                             <input type="text" class='form-control' id='cpf' name='cpf' placeholder='CPF...' required>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-4'>
+                                        <div class='form-group'>
+                                            <label for="genero">Genero</label>
+                                            <select name="genero" id="" class='form-control'>
+                                                <option value="Masculino">Masculino</option>
+                                                <option value="Feminino">Feminino</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class='col-md-6'>
@@ -202,6 +211,12 @@
                                         <div class='form-group'>
                                             <label for="nome">E-mail:</label>
                                             <input type="email" class='form-control' id='email' name='email' placeholder='email@dominio.com'>
+                                        </div>
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <div class='form-group'>
+                                            <label for="arquivo">Arquivo '.jpg', '.png':</label>
+                                            <input type="file" class='form-control' id='arquivo' name='arquivo' placeholder='.jpg, .png'>
                                         </div>
                                     </div>
                                     <div class='col-md-12'>
@@ -307,7 +322,7 @@
         <div>
             <a href="#!" onclick="institucional()"><img src="images/fechar-white.png" alt="" style='width:20px; margin-left:5px; margin-top:5px'></a>
         </div>
-        <iframe src="videos/video-um.mp4" frameborder="0"></iframe>
+        <iframe src="videos/video-um.mp4?autoplay=false" frameborder="0"></iframe>
 
     </div>
 
