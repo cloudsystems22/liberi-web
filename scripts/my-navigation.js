@@ -9,7 +9,6 @@ $(document).ready(function (){
 
 
 function click_nav(e) {
-
     if(e == 'home'){
         anima_menu(e);
     }
@@ -28,6 +27,10 @@ function click_nav(e) {
 
 function institucional(){
     document.getElementById('video-institucional').classList.toggle('active');
+}
+
+function termosUso(){
+    document.getElementById('termos-uso').classList.toggle('active');
 }
 
 function anima_menu(e){

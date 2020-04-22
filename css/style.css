@@ -4,9 +4,18 @@ html{
     font-family: Nunito;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #011D37;
+}
+
 #nav{
     position: fixed;
-    z-index: 99;
+    z-index: 98;
     width: 100%;
     top: 690px;
     /* transform: translate(0, 0); */
@@ -131,6 +140,20 @@ nav img{
     width: 20px;
 }
 
+.div-text-home{
+    margin-top: 340px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1-home{
+    color: #011D37;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 50pt;    
+}
+
 .flex {
 	display: flex;
 }
@@ -167,11 +190,12 @@ nav img{
     position: relative;
     margin-left: auto;
     margin-right: 30px;
-    width: 45px;
+    width: 110px;
 }
 
 .div-play a{
     margin-top:10px;
+    text-decoration: none;
 }
 
 .img-play{
@@ -223,6 +247,10 @@ nav img{
 
 #ul-menu li{
     display: inline-block;
+}
+
+#ul-menu a{
+    text-decoration: none;
 }
 
 .pt-perspective {
@@ -279,6 +307,11 @@ nav img{
 
 .sobre-h1{
     font-size: 67pt;
+    font-family: Nunito;
+}
+
+.sobre-a{
+    font-size: 30px;
     font-family: Nunito;
 }
 
@@ -398,6 +431,12 @@ nav img{
     top:0;
 }
 
+.promo-label{
+    color:#FFFFFF;
+    font-family: Nunito;
+    font-size: 10pt;
+}
+
 .cadastro-logo{
     position: fixed;
     top: -181px;
@@ -417,7 +456,7 @@ nav img{
     margin-left: auto;
     margin-right: auto;
     width: 900px;
-    height: 600px;
+    height: 630px;
 
 }
 
@@ -438,6 +477,10 @@ nav img{
     border-radius: 9px;
     color: white;
     border: 0;
+}
+
+.btn-enviar-cadastro.active{
+    background-color: hsl(184, 77%, 88%);
 }
 
 
@@ -526,7 +569,7 @@ nav img{
     font-family: Nunito;
     font-weight: bold;
     text-align: center;
-    text-shadow: 0.1em 0.1em 0.2em black
+    /* text-shadow: 0.1em 0.1em 0.2em black */
 }
 
 #contato h1{
@@ -585,13 +628,71 @@ nav img{
     height: 300px;
 }
 
+#termos-uso{
+    background-color: #ffffff;
+    z-index: 99;
+    width: 700px;
+    height: 900px;
+    position: fixed;
+    top: 100%;
+    left:150px;
+    transition: all 500ms linear;
+    transform: translateY(0);
+}
+
+#termos-uso.active{
+    top:10px;
+}
+
+.corpo-termos-uso{
+    padding: 20px;
+    height: 890px;
+    overflow: scroll;
+}
+
+#termos-uso h1{
+    font-family: Nunito;
+    color: #018b94;
+    width: 100%;
+    /* margin-top: 10px;
+    margin-left: 15px; */
+}
+
+.termos-fechar{
+    width: 20px;
+}
+
+#termos-uso a{
+    margin-left: 300px;
+}
+
+#termos-uso h2{
+    font-family: Nunito;
+    color: #011D37;
+    font-size: 20pt;
+    text-align: left;
+}
+
+#termos-uso h3{
+    font-family: Nunito;
+    color: #011D37;
+    font-size: 18pt;
+    text-align: left;
+}
+
+#termos-uso p{
+    font-family: Nunito;
+    font-size: 10pt;
+    text-align: justify;
+}
+
 
 
 @media (max-width: 1440px){
     
     #nav{
         position: fixed;
-        z-index: 100;
+        z-index: 98;
         width: 100%;
         top: 530px;
         /* transform: translate(0, 0); */
@@ -609,6 +710,14 @@ nav img{
         /* top:-25px */
     }
 
+    .div-text-home{
+        width: 600px;
+        margin-top: 240px;
+    }
+
+    .h1-home{
+        font-size:40pt;
+    }
     
 .sobre-div-text{
     margin-top: 110px;
@@ -731,10 +840,27 @@ nav img{
     top:150px;
 }
 
+
+#termos-uso{
+    background-color: #ffffff;
+    z-index: 99;
+    width: 700px;
+    height: 760px;
+    position: fixed;
+    top: 100%;
+    left:150px;
+    transition: all 500ms linear;
+    transform: translateY(0);
+}
+
+.corpo-termos-uso{
+    height: 755px;
+}
+
 }
 
 /* iPad Pro */
-@media (max-width: 1024px){
+@media screen and (max-width: 1024px) and (max-height: 1366px){
     #div-logo{
         bottom: 310px;
     }
@@ -744,7 +870,7 @@ nav img{
    
     #nav{
         position: fixed;
-        z-index: 100;
+        z-index: 98;
         width: 100%;
         top: 1044px;
         /* transform: translate(0, 0); */
@@ -806,6 +932,17 @@ nav img{
     top:150px;
 }
 
+
+#termos-uso{
+    left: 35px;
+    height: 1300px;
+}
+
+.corpo-termos-uso{
+    height: 1200px;
+}
+
+
 }
 
 /* iPad */
@@ -814,7 +951,7 @@ nav img{
          
     #nav{
         position: fixed;
-        z-index: 100;
+        z-index: 98;
         width: 100%;
         top: 700px;
         /* transform: translate(0, 0); */
@@ -909,6 +1046,16 @@ nav img{
 #video-institucional.active{
     top:150px;
 }
+
+#termos-uso{
+    left: 35px;
+    height: 1000px;
+}
+
+.corpo-termos-uso{
+    height: 990px;
+}
+
 }
 
 
@@ -921,7 +1068,7 @@ nav img{
     
     #nav{
         position: fixed;
-        z-index: 100;
+        z-index: 98;
         width: 100%;
         top: 45px;
         /* transform: translate(0, 0); */
@@ -985,6 +1132,15 @@ nav img{
     #span-logo-right{
         font-size: 50px;
         margin-left: 4px;
+    }
+
+    .div-text-home{
+        width: 300px;
+        margin-top: 390px;
+    }
+
+    .h1-home{
+        font-size: 18pt;
     }
 
     .sobre-text{
@@ -1160,6 +1316,26 @@ nav img{
         margin-top: 10px;
         margin-left: 5px;
     }
+
+    
+    #termos-uso{
+        left:5px;
+        width: 365px;
+        height: 620px;
+    }
+
+    .corpo-termos-uso{
+        width: 360px;
+        height: 610px;
+    }
+
+    #termos-uso h1{
+        font-size: 20pt;
+    }
+
+    #termos-uso a{
+        margin-left: 85px;
+    }
  
 }
 
@@ -1172,7 +1348,7 @@ nav img{
     
     #nav{
         position: fixed;
-        z-index: 100;
+        z-index: 98;
         width: 100%;
         top: 45px;
         /* transform: translate(0, 0); */
@@ -1236,6 +1412,17 @@ nav img{
         font-size: 50px;
         margin-left: 4px;
     }
+
+    
+    .div-text-home{
+        width: 300px;
+        margin-top: 390px;
+    }
+
+    .h1-home{
+        font-size: 18pt;
+    }
+
 
     .sobre-text{
         position: fixed;
@@ -1442,6 +1629,26 @@ nav img{
         margin-left: 5px;
     }
 
+    
+    #termos-uso{
+        left:5px;
+        width: 395px;
+        height: 720px;
+    }
+
+    .corpo-termos-uso{
+        width: 390px;
+        height: 710px;
+    }
+
+    #termos-uso h1{
+        font-size: 20pt;
+    }
+
+    #termos-uso a{
+        margin-left: 105px;
+    }
+
 }
 /* iPhone 6/7/8 */
 @media screen and (max-width: 375px) and (max-height: 667px){
@@ -1467,6 +1674,19 @@ nav img{
     }
 
     
+    .div-text-home{
+        width: 300px;
+        margin-top: 390px;
+    }
+
+    .h1-home{
+        font-size: 18pt;
+    }
+
+    .contato-logo{
+        top: -115px;
+    }
+    
     #video-institucional{
         width: 310px;
         height: 230px;
@@ -1479,6 +1699,26 @@ nav img{
         margin-top: 10px;
         margin-left: 5px;
     }
+
+    
+    #termos-uso{
+        left:5px;
+        width: 365px;
+        height: 620px;
+    }
+
+    .corpo-termos-uso{
+        width: 360px;
+        height: 610px;
+    }
+
+    #termos-uso h1{
+        font-size: 20pt;
+    }
+
+    #termos-uso a{
+        margin-left: 85px;
+    }
 }
 
 /* Moto G4 Galax S5 */
@@ -1489,6 +1729,16 @@ nav img{
 
     #ul-menu.active{
         margin-left: 34px;
+    }
+
+    
+    .div-text-home{
+        width: 300px;
+        margin-top: 390px;
+    }
+
+    .h1-home{
+        font-size: 18pt;
     }
 
     .sobre-h2{
@@ -1550,6 +1800,25 @@ nav img{
         margin-top: 10px;
         margin-left: 5px;
     }
+
+    #termos-uso{
+        left:5px;
+        width: 340px;
+        height: 620px;
+    }
+
+    .corpo-termos-uso{
+        width: 330px;
+        height: 610px;
+    }
+
+    #termos-uso h1{
+        font-size: 20pt;
+    }
+
+    #termos-uso a{
+        margin-left: 85px;
+    }
 }
 
 /* iPhone 5/SE */
@@ -1562,6 +1831,17 @@ nav img{
     #ul-menu.active{
         margin-left: 8px;
     }
+
+    
+    .div-text-home{
+        width: 300px;
+        margin-top: 390px;
+    }
+
+    .h1-home{
+        font-size: 18pt;
+    }
+
 
     .sobre-div-text{
         margin-left:-7px;
@@ -1679,6 +1959,25 @@ nav img{
         height: 180px;
         margin-top: 10px;
         margin-left: 5px;
+    }
+
+    #termos-uso{
+        left:5px;
+        width: 310px;
+        height: 520px;
+    }
+
+    .corpo-termos-uso{
+        width: 305px;
+        height: 510px;
+    }
+
+    #termos-uso h1{
+        font-size: 20pt;
+    }
+
+    #termos-uso a{
+        margin-left: 60px;
     }
 
 }

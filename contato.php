@@ -22,10 +22,12 @@ $mail = new PHPMailer();
 $mail->IsSMTP(); 
  
 // Enviar por SMTP 
-$mail->Host = "mail.unioperadora.com.br"; 
- 
+$mail->Host = "mail.liberimovil.com.br"; 
+//$mail->Host = "n3plcpnl0264.prod.ams3.secureserver.net"
+
 // Porta de saída 
 $mail->Port = 587; 
+//$mail->Port = 465; 
  
  
 // Usar autenticação SMTP (obrigatório) 
@@ -33,8 +35,9 @@ $mail->SMTPAuth = true;
  
 // Usuário do servidor SMTP (endereço de email) 
 // obs: Use a mesma senha da sua conta de email 
-$mail->Username = 'logistica@unioperadora.com.br'; 
-$mail->Password = 'logistica@br'; 
+$mail->Username = 'test@liberimovil.com.br'; 
+$mail->Password = 'liberi$movil$br$20'; 
+
  
 // Configurações de compatibilidade para autenticação em TLS 
 $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true ) ); 
@@ -44,14 +47,15 @@ $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer
  
 // Define o remetente 
 // Seu e-mail 
-//$mail->From = "logistica@unioperadora.com.br";
-$mail->From = $Email;
+$mail->From = "test@liberimovil.com.br";
+//$mail->From = $Email;
  
 // Seu nome 
 $mail->FromName = $Name; 
  
 // Define o(s) destinatário(s) 
 $mail->AddAddress('contato@unioperadora.com.br', 'Site - Uniglobal');
+//$mail->AddAddress('davidfico22@gmail.com', 'Site - Liberi');
 //$mail->AddAddress('damiko@mdk.net.br', 'MDK INFORMÁTICA'); 
  
 // Opcional: mais de um destinatário
@@ -122,7 +126,7 @@ if ($enviado)
  
 <?php
     //echo "Seu email foi enviado com sucesso!"; 
-    echo "<meta http-equiv='refresh' content='10;URL=Index.php'>";
+    echo "<meta http-equiv='refresh' content='10;URL=index.php'>";
 } else { 
     ?>
 

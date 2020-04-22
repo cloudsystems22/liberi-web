@@ -1,5 +1,4 @@
 <?php
-session_start();
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,6 +18,9 @@ $Cidade = $_POST['cidade'];
 $Estado = $_POST['estado'];
 $Email = $_POST['email'];
 $Phone = $_POST['telefone'];
+$Concordo = $_POST['condcontrat'];
+$Promo = $_POST['recedpromo'];
+$Operadora = $_POST['operadora'];
 //$Subject = $_POST['subject'];
 $Subject = 'Cadastro site Liberi - Plano';
 //$Mesage = $_POST['mensagem'];
@@ -31,19 +33,20 @@ $mail = new PHPMailer();
 $mail->IsSMTP(); 
 
 // Enviar por SMTP 
-$mail->Host = "mail.unioperadora.com.br"; 
+$mail->Host = "mail.liberimovil.com.br"; 
+//$mail->Host = "n3plcpnl0264.prod.ams3.secureserver.net"
 
 // Porta de saída 
 $mail->Port = 587; 
-
+//$mail->Port = 465;
 
 // Usar autenticação SMTP (obrigatório) 
 $mail->SMTPAuth = true; 
 
 // Usuário do servidor SMTP (endereço de email) 
 // obs: Use a mesma senha da sua conta de email 
-$mail->Username = 'logistica@unioperadora.com.br'; 
-$mail->Password = 'logistica@br'; 
+$mail->Username = 'test@liberimovil.com.br'; 
+$mail->Password = 'liberi$movil$br$20'; 
 
 // Configurações de compatibilidade para autenticação em TLS 
 $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true ) ); 
@@ -53,14 +56,15 @@ $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer
 
 // Define o remetente 
 // Seu e-mail 
-//$mail->From = "logistica@unioperadora.com.br";
-$mail->From = $Email;
+$mail->From = "test@liberimovil.com.br";
+//$mail->From = $Email;
 
 // Seu nome 
 $mail->FromName = $Name; 
 
 // Define o(s) destinatário(s) 
 $mail->AddAddress('contato@unioperadora.com.br', 'Site - Liberi'); 
+//$mail ->AddAddress('davidfico22@gmail.com', 'David Fico');
 
 // Opcional: mais de um destinatário
 // $mail->AddAddress('fernando@email.com'); 
@@ -89,11 +93,14 @@ $mail->Body =  "<h3 style='font-family:Arial'>". $Name ."</h3>"
 ."<tr><td style='width:120px;'>Genero:</td><td style='width:380px'>". $Genero ."</td></tr>"
 ."<tr><td style='width:120px;'>Email:</td><td style='width:380px'>". $Email ."</td></tr>"
 ."<tr><td style='width:120px;'>Fone:</td><td style='width:380px'>". $Phone ."</td></tr>"
+."<tr><td style='width:120px;'>Operadora:</td><td style='width:380px'>". $Operadora ."</td></tr>"
 ."<tr><td style='width:120px;'>CEP:</td><td style='width:380px'>". $CEP ."</td></tr>"
-                ."<tr><td style='width:120px;'>End:</td><td style='width:380px'>". $Endereco ."</td></tr>"
-                ."<tr><td style='width:120px;'>Bairro:</td><td style='width:380px'>". $Bairro ."</td></tr>"
-                ."<tr><td style='width:120px;'>Cidade:</td><td style='width:380px'>". $Cidade ."</td></tr>"
-                ."<tr><td style='width:120px;'>Estado:</td><td style='width:380px'>". $Estado ."</td></tr>";
+."<tr><td style='width:120px;'>End:</td><td style='width:380px'>". $Endereco ."</td></tr>"
+."<tr><td style='width:120px;'>Bairro:</td><td style='width:380px'>". $Bairro ."</td></tr>"
+."<tr><td style='width:120px;'>Cidade:</td><td style='width:380px'>". $Cidade ."</td></tr>"
+."<tr><td style='width:120px;'>Estado:</td><td style='width:380px'>". $Estado ."</td></tr>"
+."<tr><td style='width:120px;'>Termo Aceito:</td><td style='width:380px'>". $Concordo ."</td></tr>"
+."<tr><td style='width:120px;'>Env. Msg:</td><td style='width:380px'>". $Promo ."</td></tr>";
                 
 
 
@@ -148,8 +155,8 @@ if ($enviado)
 </body>
 </html>
 <?php
-    //echo "Seu cadastro foi enviado com sucesso!"; 
-    echo "<meta http-equiv='refresh' content='10;URL=Index.php'>";
+    echo "Seu cadastro foi enviado com sucesso! ". $Name; 
+    echo "<meta http-equiv='refresh' content='10;URL=index.php'>";
 } else { 
     ?>
 

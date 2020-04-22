@@ -1,6 +1,3 @@
-$(document).ready(function (){
-    //document.getElementById('ul-menu').style.display = 'none';
-});
 
 function toggleSidebar(){
     document.getElementById('menu-left').classList.toggle('active');
