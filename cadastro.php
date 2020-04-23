@@ -18,8 +18,8 @@ $Cidade = $_POST['cidade'];
 $Estado = $_POST['estado'];
 $Email = $_POST['email'];
 $Phone = $_POST['telefone'];
-$Concordo = $_POST['condcontrat'];
-$Promo = $_POST['recedpromo'];
+$Concordo = (isset($_POST['condcontrat']) ) ? 'aceito' : 'não aceito';
+$Promo = (isset ($_POST['recebpromo']) ) ? 'aceito' : 'não aceito';
 $Operadora = $_POST['operadora'];
 //$Subject = $_POST['subject'];
 $Subject = 'Cadastro site Liberi - Plano';
@@ -87,9 +87,12 @@ $mail->Subject = $Subject;
 $mail->Body =  "<h3 style='font-family:Arial'>". $Name ."</h3>"
 ."<table style='width:500px; height:70px; font-family:Arial; border:0px'>"
 ."<tr style='background-color:#0a2f59'>"
-."<td style='width:120px;'>Liberi movil</td>"
+."<td style='width:120px; color:#FFFFFF; font-size:12pt'>Liberi movil</td>"
 ."<td style='width:380px'><h3 style='font-family:Arial; color:white; text-align:center'>Cadastro enviado site liberi</h3></td></tr></table>"
+."<table style='width:500px; height:70px; font-family:Arial; border:0px'>"
 ."<tr><td style='width:120px;'>Nome:</td><td style='width:380px'>". $Name ."</td></tr>"
+."<tr><td style='width:120px;'>RG:</td><td style='width:380px'>". $RG ."</td></tr>"
+."<tr><td style='width:120px;'>CPF:</td><td style='width:380px'>". $CPF ."</td></tr>"
 ."<tr><td style='width:120px;'>Genero:</td><td style='width:380px'>". $Genero ."</td></tr>"
 ."<tr><td style='width:120px;'>Email:</td><td style='width:380px'>". $Email ."</td></tr>"
 ."<tr><td style='width:120px;'>Fone:</td><td style='width:380px'>". $Phone ."</td></tr>"
@@ -100,7 +103,8 @@ $mail->Body =  "<h3 style='font-family:Arial'>". $Name ."</h3>"
 ."<tr><td style='width:120px;'>Cidade:</td><td style='width:380px'>". $Cidade ."</td></tr>"
 ."<tr><td style='width:120px;'>Estado:</td><td style='width:380px'>". $Estado ."</td></tr>"
 ."<tr><td style='width:120px;'>Termo Aceito:</td><td style='width:380px'>". $Concordo ."</td></tr>"
-."<tr><td style='width:120px;'>Env. Msg:</td><td style='width:380px'>". $Promo ."</td></tr>";
+."<tr><td style='width:120px;'>Env. Msg:</td><td style='width:380px'>". $Promo ."</td></tr>"
+."</table>";
                 
 
 

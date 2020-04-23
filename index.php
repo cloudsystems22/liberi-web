@@ -236,7 +236,7 @@
                                         <div class='col-md-6'>
                                             <div class='form-group'>
                                                 <input type="checkbox" name="condcontrat" id="condcontat"><label for="condcontrat">Li e concordo com os <a href='#!' onclick="termosUso()">termos de uso!</a></label><br>
-                                                <input type="checkbox" name="recedpromo" id="recebpromo"><span class='promo-label'>Aceito receber mensagens, publicidade e promoções da Liberi Móvil e seus parcerios comerciais</span>
+                                                <input type="checkbox" name="recebpromo" id="recebpromo"><span class='promo-label'>Aceito receber mensagens, publicidade e promoções da Liberi Móvil e seus parcerios comerciais</span>
                                             </div>
                                         </div>
                                     <div class='col-md-12'>
