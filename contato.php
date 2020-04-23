@@ -54,7 +54,7 @@ $mail->From = "test@liberimovil.com.br";
 $mail->FromName = $Name; 
  
 // Define o(s) destinatário(s) 
-$mail->AddAddress('contato@unioperadora.com.br', 'Site - Uniglobal');
+$mail->AddAddress('contato@liberimovil.com.br', 'Site - Uniglobal');
 //$mail->AddAddress('davidfico22@gmail.com', 'Site - Liberi');
 //$mail->AddAddress('damiko@mdk.net.br', 'MDK INFORMÁTICA'); 
  
@@ -62,7 +62,7 @@ $mail->AddAddress('contato@unioperadora.com.br', 'Site - Uniglobal');
 // $mail->AddAddress('fernando@email.com'); 
  
 // Opcionais: CC e BCC
-//$mail->AddCC('damico@mdk.net.br', 'MDK INFORMÁTICA'); 
+$mail->AddCC('logistica@unioperadora.com.br', 'Site - Liberi'); 
 //$mail->AddBCC('contato@unioperadora.com.br', 'David'); 
  
 // Definir se o e-mail é em formato HTML ou texto plano 

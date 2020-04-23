@@ -224,7 +224,7 @@
                                     </div>
                                     <div class='col-md-6'>
                                         <div class='form-group'>
-                                            <label for="arquivo">Img. RG ou CNH '.jpg', '.png':</label>
+                                            <label for="arquivo">Insira aqui a imagem do seu RG ou CNH '.jpg', '.png':</label>
                                             <input type="file" class='form-control' id='arquivo' name='arquivo' placeholder='.jpg, .png'>
                                         </div>
                                     </div>

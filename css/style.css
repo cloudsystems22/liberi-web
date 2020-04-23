@@ -859,6 +859,43 @@ nav img{
 
 }
 
+@media screen and (max-width: 1360px) and (max-height: 640px){
+    #div-logo{
+        bottom: 100px;
+    }
+
+    .contato-logo{
+        top: -100px;
+    }
+
+    .div-cadastro{
+        height: 517px;
+    }
+
+    .div-form{
+        height: 515px;
+        overflow: scroll;
+    }
+
+    .parceiros-img{
+        width: 300px;
+    }
+
+    #contato h1{
+        padding-top: 100px;
+    }
+    #contato h2{
+        margin-top: -16px;
+    }
+
+    #email-form{
+        top: 180px;
+        left: 330px;
+        right: 330px;
+    }
+}
+
+
 /* iPad Pro */
 @media screen and (max-width: 1024px) and (max-height: 1366px){
     #div-logo{
