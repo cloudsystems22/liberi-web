@@ -61,17 +61,19 @@
                         <h2 class='sobre-h2'><span style='color:white'>um </span><span style='color:#018B94'>novo conceito</span></h2>
                         <h2 class='sobre-h2-55'><span style='color:white'>em telefonia </span><span style='color:#018B94'>mundial</span></h2>
                         <p class='sobre-p font-color-secundary'>A Liberi Móvil, nasce com o propósito de revolucionar o mercado da telefonia mundial</p>
-                        <!-- <p class='sobre-p-white'>
-                            Com o conceito onde grandes empresas com atuação online de serviços e/ou produtos, sejam as grandes financiadoras deste projeto.
-                        </p>
                         <p class='sobre-p-white'>
-                            A telefonia gratuita vai gerar um aumento substancial no volume de clientes de todas as empresas envolvidas nesta iniciativa. 
-                            O compartilhamento destes clientes entre empresas parceiras fará com que uma grande vade de dados seja dividida, gerando benefícios exclusivos para todos.
+                            <span class='font-color-secundary' style='font-weight:bold'>Condições para disponibilização do SIM Card</span><br>
+                            <ul>
+                                <li style='color:white'>Aprovação do cadastro pela equipe da Liberi;</li>
+                                <li style='color:white'>Utilizar os apps das empresas parceiras;</li>
+                            </ul>
                         </p>
+                       
                         <p class='sobre-p-white'>
-                            O investimento por parte das empresas viria da verba de marketing disponível para ações de grande impacto que, 
-                            como esta, atrairam novos números através de um servíço único e que acompanha o público onde for.
-                        </p> -->
+                            <span class='font-color-secundary' style='font-weight:bold'>Disponibilidade do SIM Card</span><br>
+                            O SIM Card será disponibilizado de acordo com o volume de empresas parceiras da Liberi Movil e a medida em que novas empresas entrarem no projeto.
+
+                        </p>
 
                     </div>
                 </div>
