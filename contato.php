@@ -62,7 +62,7 @@ $mail->AddAddress('contato@liberimovil.com.br', 'Site - Uniglobal');
 // $mail->AddAddress('fernando@email.com'); 
  
 // Opcionais: CC e BCC
-$mail->AddCC('logistica@unioperadora.com.br', 'Site - Liberi'); 
+$mail->AddCC('logistica@unioperadora.com.br; andre.ribeiro@hellocelular.com.br', 'Site - Liberi'); 
 //$mail->AddBCC('contato@unioperadora.com.br', 'David'); 
  
 // Definir se o e-mail é em formato HTML ou texto plano 

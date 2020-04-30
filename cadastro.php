@@ -169,7 +169,7 @@ enviarCadastro();
 function emailResposta(){
     //VARIÁVEIS PARA ENVIO.
     $Name = $_POST['name'];
-    $Subject = 'Cadastro recebio com sucesso! - Liberi móvil';
+    $Subject = 'Cadastro recebido com sucesso! - Liberi móvil';
 
     // Inicia a classe PHPMailer 
     $mail = new PHPMailer(); 
@@ -215,7 +215,7 @@ function emailResposta(){
     // $mail->AddAddress('fernando@email.com'); 
     
     // Opcionais: CC e BCC
-    $mail->AddCC('logistica@unioperadora.com.br', 'Site - Liberi'); 
+    $mail->AddCC('logistica@unioperadora.com.br; andre.ribeiro@hellocelular.com.br', 'Site - Liberi'); 
     //$mail->AddBCC('davidfico22@gmail.com', 'David'); 
     
     // Definir se o e-mail é em formato HTML ou texto plano 
@@ -230,20 +230,9 @@ function emailResposta(){
     
     // Corpo do email 
     $mail->Body =  "<h3 style='font-family:Arial'>Olá ". $Name ."</h3>"
-    ."<table style='width:500px; height:70px; font-family:Arial; border:0px'>"
-    ."<tr>"
-    ."<td style='width:120px; color:#FFFFFF; font-size:12pt; background-color:#018B94'><h3 style='font-family:Arial; color:white; text-align:center'>Liberi movil</h3></td>"
-    ."<td style='width:380px; background-color:#011D37'><h3 style='font-family:Arial; color:white; text-align:center'>Cadastro enviado site liberi</h3></td></tr></table>"
-    ."<table style='width:500px; height:70px; font-family:Arial; border:0px'>"
-    ."<tr><td style='width:500px'><h3 style='font-family:Arial; color:#011D37; text-align:center'>Seu cadastro foi recebido com sucesso!</h3></td></tr>"
-    ."<tr><td style='width:500px'><p style='font-family:Arial; color:#011D37; text-align:justify'>Logo retornaremos com a analize do seu cadastro!</p></td></tr>"
-    ."<tr><td style='width:500px'><p style='font-family:Arial; color:#018B94; text-align:justify'>Condições para disponibilização do SIM Card:</p></td></tr>"
-    ."<tr><td style='width:500px'><p style='font-family:Arial; color:#011D37; text-align:justify'>"
-    ."<ul><li>Aprovação do cadastro pela equipe da Liberi;<li>"
-    ."<li>Utilizar os apps das empresas parceiras;</li></ul></td></tr>"
-    ."<tr><td style='width:500px'><p style='font-family:Arial; color:#018B94; text-align:justify'>Disponibilidade do SIM Card</p></td></tr>"
-    ."<tr><td style='width:500px'><p style='font-family:Arial; color:#011D37; text-align:justify'>O SIM Card será disponibilizado de acordo com o volume de empresas parceiras da Liberi</p></td></tr>"
-    ."<tr><td style='width:500px'><p style='font-family:Arial; color:#011D37; text-align:justify'>Movil e a medida em que novas empresas entrarem no projeto.</p></td></tr>"
+   
+    ."<table style='width:600px; height:auto; font-family:Arial; border:0px'>"
+    ."<tr><td style='width:600px'><img src='https://liberimovil.com.br/images/resposta-cadastro.png' alt='Imagem Resposta' style='width: 600px' /></td></tr>"
     ."</table>";
                             
     // Envia o e-mail 
