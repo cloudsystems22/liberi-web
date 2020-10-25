@@ -35,8 +35,8 @@ $mail->SMTPAuth = true;
  
 // Usuário do servidor SMTP (endereço de email) 
 // obs: Use a mesma senha da sua conta de email 
-$mail->Username = 'test@liberimovil.com.br'; 
-$mail->Password = 'liberi$movil$br$20'; 
+$mail->Username = 'cadastro@liberimovil.com.br'; 
+$mail->Password = 'Liberi@@qwe45'; 
 
  
 // Configurações de compatibilidade para autenticação em TLS 
@@ -47,14 +47,14 @@ $mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer
  
 // Define o remetente 
 // Seu e-mail 
-$mail->From = "test@liberimovil.com.br";
+$mail->From = "cadastro@liberimovil.com.br";
 //$mail->From = $Email;
  
 // Seu nome 
 $mail->FromName = $Name; 
  
 // Define o(s) destinatário(s) 
-$mail->AddAddress('contato@liberimovil.com.br', 'Site - Uniglobal');
+$mail->AddAddress($Email, $Name);
 //$mail->AddAddress('davidfico22@gmail.com', 'Site - Liberi');
 //$mail->AddAddress('damiko@mdk.net.br', 'MDK INFORMÁTICA'); 
  
@@ -62,8 +62,19 @@ $mail->AddAddress('contato@liberimovil.com.br', 'Site - Uniglobal');
 // $mail->AddAddress('fernando@email.com'); 
  
 // Opcionais: CC e BCC
-$mail->AddCC('logistica@unioperadora.com.br; andre.ribeiro@hellocelular.com.br', 'Site - Liberi'); 
+// $mail->AddCC('logistica@unioperadora.com.br', 'Site - Liberi'); 
+// $mail->AddCC('andre.ribeiro@hellocelular.com.br', 'Site - Liberi');
 //$mail->AddBCC('contato@unioperadora.com.br', 'David'); 
+$recipients = array(
+    'logistica@unioperadora.com.br' => 'Site - Liberi',
+    'andre.ribeiro@hellocelular.com.br' => 'Site - Liberi',
+    // ..
+ );
+ foreach($recipients as $email => $name)
+ {
+    //$mail->AddCC($email, $name);
+    $mail->addBCC($email, $name);
+ }
  
 // Definir se o e-mail é em formato HTML ou texto plano 
 // Formato HTML . Use "false" para enviar em formato texto simples ou "true" para HTML.
